@@ -1,0 +1,5 @@
+{
+  "name": "Visual to Knowledge Navigator",
+  "description": "Transforms any image into a comprehensive, structured learning module using Gemini 3 Pro.",
+  "requestFramePermissions": []
+}
