@@ -1,7 +1,7 @@
 import { GoogleGenAI, Chat, HarmCategory, HarmBlockThreshold } from "@google/genai";
 import { KnowledgeModule, WebResourceData, WebSource } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || 'FAKE_API_KEY_FOR_DEVELOPMENT' });
 
 // We define the structure in the prompt to avoid 500 errors with strict schema validation on complex nested objects
 const SYSTEM_INSTRUCTION = `
